@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:weightSum="100"
+    android:layout_height="match_parent">
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/activitySpinner"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="100"
+            android:orientation="vertical" >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="45">
+
+            <TextView
+                android:text="Messages"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="22dp"
+                android:textColor="@color/black"
+                android:id="@+id/textView"/>
+            <View
+                android:id="@+id/devider1"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/textView"
+                android:background="@color/lime"/>
+
+            <ScrollView
+                android:id="@+id/messagesScroll"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/devider1"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/messageHLL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" />
+            </ScrollView>
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/devider2"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/lime"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="55">
+
+            <TextView
+                android:text="Press to record"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_centerInParent="true"
+                android:textSize="18dp"
+                android:textColor="@color/blue"
+                android:id="@+id/recordingTextView"/>
+<!-- app:srcCompat="@drawable/mic"-->
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/recordingTextView"
+                android:layout_centerInParent="true"
+                android:background="@drawable/mic"
+
+                android:scaleType="fitStart"
+                android:id="@+id/imageButton"/>
+        </RelativeLayout>
+
+        <TextView
+            android:text="Advanced settings"
+            android:layout_weight="10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_marginTop="30dp"
+            android:textSize="18dp"
+            android:textColor="@color/green"
+            android:background="@drawable/border"
+            android:id="@+id/advancedActivityTextView"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+    <!--   <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_weight="15">
+
+           <TextView
+               android:text="Messages"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textAlignment="center"
+               android:textSize="22dp"
+               android:textColor="@color/black"
+               android:layout_weight="5"
+               android:id="@+id/textView"/>
+           <View
+               android:id="@+id/devider1"
+               android:layout_width="fill_parent"
+               android:layout_height="1dp"
+               android:layout_below="@+id/textView"
+               android:background="@color/lime"/>
+
+           <ScrollView
+               android:id="@+id/messagesScroll"
+               android:layout_weight="70"
+               android:layout_width="match_parent"
+               android:layout_below="@+id/devider1"
+               android:layout_height="wrap_content">
+
+               <LinearLayout
+                   android:id="@+id/messageHLL"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical" />
+           </ScrollView>
+       </RelativeLayout>
+
+       <View
+           android:id="@+id/devider2"
+           android:layout_width="fill_parent"
+           android:layout_height="1dp"
+           android:background="@color/lime"/>
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_weight="30">
+
+           <TextView
+               android:text="Press to record"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textAlignment="center"
+               android:layout_centerInParent="true"
+               android:textSize="18dp"
+               android:textColor="@color/blue"
+               android:id="@+id/recordingTextView"/>
+
+           <ImageButton
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_below="@id/recordingTextView"
+               android:layout_centerInParent="true"
+               app:srcCompat="@drawable/mic"
+               android:scaleType="fitStart"
+               android:id="@+id/imageButton"/>
+       </RelativeLayout>
+
+       <TextView
+           android:text="Advanced settings"
+           android:layout_weight="10"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:textAlignment="center"
+           android:layout_marginTop="30dp"
+           android:textSize="18dp"
+           android:textColor="@color/green"
+           android:background="@drawable/border"
+           android:id="@+id/advancedActivityTextView"/>-->
+</LinearLayout>

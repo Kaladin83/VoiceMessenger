@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.maratbe.mytest1">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:alwaysRetainTaskState="true"
+            android:launchMode="singleInstance">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/app_name" android:name=".AutoModeActivity"
+            android:alwaysRetainTaskState="true"
+            android:launchMode="singleInstance"></activity>
+        <activity
+            android:label="@string/app_name" android:name=".AdvancedActivity"
+            android:alwaysRetainTaskState="true"
+            android:launchMode="singleInstance"></activity>
+        <activity
+            android:label="@string/app_name" android:name=".MapImageActivity"
+            android:alwaysRetainTaskState="true"
+            android:launchMode="singleInstance"></activity>
+        <activity
+            android:label="@string/app_name" android:name=".IncomingCallUI"
+            android:alwaysRetainTaskState="true"
+            android:launchMode="singleInstance"></activity>
+        <receiver android:name=".PhoneCallReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE" />
+                <action android:name="android.intent.action.PROCESS_OUTGOING_CALLS" />
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+    </application>
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS"></uses-permission>
+
+</manifest>

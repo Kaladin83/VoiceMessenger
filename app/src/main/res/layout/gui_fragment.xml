@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/devider"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:id="@+id/fragmentLL"
+    android:layout_height="match_parent">
+<!-- android:background="@drawable/border"-->
+    <TextView
+        android:text="Would you like to send a message?"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:id="@+id/textView" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:id="@+id/mainListView"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
